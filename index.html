@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Испытание: форма регистрации</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+<body>
+	<h1>Формы</h1>
+	<h2>Регистрация</h2>
+	<form action="" method="">
+		<label for="login">Ваш логин (email):</label><br>
+		<input type="text" name="login" id="login"><br>
+		<label for="password">Ваш пароль:</label><br>
+		<input type="password" name="password" id="password"><br>
+		<label for="comment">Информация о себе:</label><br>
+		<textarea name="comment" id="comment" rows="3">Информация о себе</textarea><br>
+		<input type="checkbox" name="checkbox" id="checkbox" checked>
+		<label for="checkbox">Подписаться на рассылку</label><br><br>
+		<input type="button" name="button_reg" value="Зарегистрироваться"><br><br>
+	</form>
+	<h2>Форма выбора</h2>
+	<form>
+		<p>Какой тег обозначает абзац?</p>
+		<label>
+			<input type="radio" name="question1" value="p"> Тег&lt;p&gt; 
+		</label><br>		
+		<label>
+			<input type="radio" name="question1" value="b"> Тег&lt;b&gt; 
+		</label><br><br>
+		<input type="button" name="answer1" value="Ответить"><br><br>
+		<p>Сколько будет 2+2? <br>
+		Выберите один из вариантов:</p>
+		<select name="select-form">
+			<option value="no"></option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="How much do you need">А сколько нужно?</option>
+		</select><br><br>
+		<input type="button" name="answer2" value="Ответить">
+	</form>
+	<!--Итоговое испытание-->
+	<h1>Профиль</h1>
+	<form action="" method="post" enctype="multipart/form-data">
+		Ваш пол:
+		<label><input type="radio" name="question2" value="male" checked>
+			Male
+		</label>
+		<label><input type="radio" name="question2" value="female">
+			Female
+		</label><br>
+		Месяц и год рождения:<br>
+		<select name="month">
+			<option value="Jan" selected>January</option>
+			<option value="Feb">February</option>
+			<option value="Mar">March</option>
+			<option value="Apr">April</option>
+			<option value="May">May</option>
+			<option value="Jun">Jun</option>
+			<option value="Jul">July</option>
+			<option value="Aug">August</option>
+			<option value="Sep">September</option>
+			<option value="Oct">October</option>	
+			<option value="Nov">November</option>
+			<option value="Dec">December</option>
+		</select>
+		<select name="year">
+			<option value="1990">1990</option>
+			<option value="2000">2000</option>
+		</select><br>
+		Знакомые технологии<br>
+		<select name="technologies" multiple>
+			<option value="HTML">HTML</option>
+			<option value="CSS" selected>CSS</option>
+			<option value="JS">JavaScript</option>
+			<option value="Node.js">Node.js</option>
+		</select><br><br>
+		Foto:
+		<input type="file" name="foto"><br><br>
+		<input type="submit" name="send" value="Отправить">	
+	</form>
+</body>
+</html>
